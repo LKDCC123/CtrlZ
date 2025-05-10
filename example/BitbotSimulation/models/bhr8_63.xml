@@ -9,6 +9,10 @@
     <mesh name="lfoot" file="lfoot.stl"/>
   </asset>
 
+  <default>
+    <geom  condim='4' contype="1" conaffinity="15" solref='0.001 2' friction='0.9 0.2 0.2'/>
+  </default>
+
   <option timestep="0.001" integrator="RK4">
     <flag sensornoise="enable" />
   </option>

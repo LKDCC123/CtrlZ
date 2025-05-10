@@ -121,7 +121,7 @@
       },
       "Network": {
         // "ModelPath": "/home/zqr-wsl-ubuntu/devel/CtrlZ/example/BitbotSimulation/CheckPoints/policy_lstm_1.onnx",
-        "ModelPath": "/home/zqr-wsl-ubuntu/devel/CtrlZ/example/BitbotSimulation/CheckPoints/policy_lstm_1_Apr17_15-28-4450.onnx",
+        "ModelPath": "D:/L.B/GitHUB/CtrlZ/example/BitbotSimulation/CheckPoints/policy_lstm_1.onnx",
         "InputNodeNames": [
           "observation",
           "hidden_state",

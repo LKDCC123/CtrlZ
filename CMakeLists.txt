@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
 
 project(CtrlZ)
 
@@ -6,12 +7,14 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+message(Cmake binary dir: ${CMAKE_BINARY_DIR})
+
 include_directories(${PROJECT_SOURCE_DIR}/CtrlZ)
 
 option(BUILD_DOC "Build documentation" OFF)
 option(BUILD_EXAMPLE_BITBOT_SIM ON)
 if(WIN32)
-  set(ONNXRUNTIME_ROOT "C:/ProgramFiles/lib/onnxruntime")
+  set(ONNXRUNTIME_ROOT "C:/Program Files/lib/onnxruntime")
 elseif(UNIX)
     set(ONNXRUNTIME_ROOT "/home/zqr-wsl-ubuntu/apps/onnxruntime/onnxruntime-linux-x64-1.21.0")
 else()
